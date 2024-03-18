@@ -1,5 +1,4 @@
-import { Track } from '../Repositories/Playlist.repository';
-import { Playlist as PlaylistType, Track as TrackType } from '../types';
+import { Track } from '../Repositories/Track.repository';
 
 export class TrackService {
   async getAllTracks() {

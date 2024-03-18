@@ -10,13 +10,11 @@ const trackSchema = new mongoose.Schema({
   coverImgSrc: String,
 });
 
-export const Track = mongoose.model('Track', trackSchema);
-
 const playlistSchema = new mongoose.Schema({
   name: String,
   description: String,
   author: String,
-  totalDuration: Number,
+  totalDuration: Number, // In a small scale this should be fine, no need to iterate and sum~
   followerCount: Number,
   tracks: [trackSchema],
 });
